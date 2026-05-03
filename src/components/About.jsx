@@ -1,4 +1,5 @@
 import { useLanguage } from '../contexts/LanguageContext';
+import profileImg from '../assets/image.png';
 
 export default function About() {
   const { t } = useLanguage();
@@ -18,7 +19,7 @@ export default function About() {
           </ul>
         </div>
         <div className="about-image-wrapper">
-          <img src="src/assets/image.png" alt="Franz" className="about-image" />
+          <img src={profileImg} alt="Franz" className="about-image" />
         </div>
       </div>
     </section>
